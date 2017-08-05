@@ -8,14 +8,14 @@ public class Answer1 {
 		System.out.println("----------start------------");
 
 		long startTime = System.currentTimeMillis();
-		//fool(value);
+		fool(value);
 		long endTime = System.currentTimeMillis();
-		System.out.println("ǿ�� ����ʱ��:"+(endTime-startTime)/1000/60+"min");
+		System.out.println("强行实现花费时间:"+(endTime-startTime)/1000/60+"min");
 
 		startTime = System.currentTimeMillis();
 		algorithm(value);
 		endTime = System.currentTimeMillis();
-		System.out.println("�㷨 ����ʱ��:"+(endTime-startTime)+"ms");
+		System.out.println("算法实现花费时间:"+(endTime-startTime)+"ms");
 	}
 	
 	public static void fool(long k){
@@ -26,12 +26,12 @@ public class Answer1 {
 				if(a==1) count ++;
 			}
 		}
-		System.out.println("ǿ�У�f("+k+")="+count);
+		System.out.println("f("+k+")="+count);
 	}
 	
 	public static void algorithm(long k){
 		long count = recursiveAlg(k);
-		System.out.println("�㷨��f("+k+")="+count);
+		System.out.println("f("+k+")="+count);
 	}
 	
 	public static long recursiveAlg(long k){
